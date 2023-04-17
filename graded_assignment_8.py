@@ -13,7 +13,7 @@ import pandas as pd
 st.write("""
 # An app that finds the largest among the 3 given numbers
 
-This app returns the value greater than the other two. Enter values for n1, n2 and n3 in the fields below:
+This app returns the value which is greater than the other two. Enter values for n1, n2 and n3 in the fields below:
 """)
 
 st.header('User Input Parameters')
@@ -46,13 +46,13 @@ st.subheader('Pre-processed Input to the Model')
 st.table(df)
 
 # Model Loading
-N1 = df[0][0]
-N2 = df[0][1]
-N3 = df[0][2]
+N1 = df.iat[0,0]
+N2 = df.iat[0,1]
+N3 = df.iat[0,2]
 
 #Model Inferencing
 
-st.subheader('Prediction Probability')
+st.subheader('The largest number among those you entered is:')
 
 if (N1>N2 and N1>N3) or (N1>N2 and N2==N3):
   st.write(N1 + " is the largest value")
