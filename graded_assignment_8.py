@@ -54,15 +54,11 @@ N3 = df[0][2]
 
 st.subheader('Prediction Probability')
 
-if (N1>N2 and N1>N3) or (N1>N2 and N2=N3):
+if (N1>N2 and N1>N3) or (N1>N2 and N2==N3):
   st.write(N1 + " is the largest value")
-elif (N2>N1 and N2>N3) or (N2>N1 and N1=N3):
+elif (N2>N1 and N2>N3) or (N2>N1 and N1==N3):
   st.write(N2 + " is the largest value")
-elif (N3>N1 and N3>N2) or (N3>N1 and N1=N2):
+elif (N3>N1 and N3>N2) or (N3>N1 and N1==N2):
   st.write(N3 + " is the largest value")
 else:
   st.write(N1 + " is the largest value")
-
-print(st.__version__)
-
-pd.__version__
