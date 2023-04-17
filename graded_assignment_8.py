@@ -55,10 +55,10 @@ N3 = df.iat[0,2]
 st.subheader('The largest number among those you entered is:')
 
 if (N1>N2 and N1>N3) or (N1>N2 and N2==N3):
-  st.write(N1 + " is the largest value")
+  st.write(N1, " is the largest value")
 elif (N2>N1 and N2>N3) or (N2>N1 and N1==N3):
-  st.write(N2 + " is the largest value")
+  st.write(N2, " is the largest value")
 elif (N3>N1 and N3>N2) or (N3>N1 and N1==N2):
-  st.write(N3 + " is the largest value")
+  st.write(N3, " is the largest value")
 else:
-  st.write(N1 + " is the largest value")
+  st.write(N1, " is the largest value")
