@@ -13,7 +13,7 @@ import pandas as pd
 st.write("""
 # An app that finds the largest among the 3 given numbers
 
-This app returns the value greater than the other two
+This app returns the value greater than the other two. Enter values for n1, n2 and n3 in the fields below:
 """)
 
 st.header('User Input Parameters')
